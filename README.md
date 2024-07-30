@@ -8,5 +8,5 @@
 
 ## Usage: 
 ~~~ 
-    git clone https://github.com/Penguin5681/05101334-Data-Science && cd 05101334-Data-Science && pip install -r requirements.txt && code
+git clone https://github.com/Penguin5681/05101334-Data-Science && cd 05101334-Data-Science && pip install -r requirements.txt && code
  ~~~
