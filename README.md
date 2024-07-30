@@ -7,6 +7,7 @@
 ## NOTE: Download the datasets and update the paths before proceeding to run the notebook
 
 ## Usage: 
+### Open cmd or powershell and paste the following
 ~~~ 
 git clone https://github.com/Penguin5681/05101334-Data-Science && cd 05101334-Data-Science && pip install -r requirements.txt && code
  ~~~
