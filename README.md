@@ -5,3 +5,8 @@
 ### 2. [Matplotlib](https://github.com/Penguin5681/05101334-Data-Science/blob/main/Matplotlib/Notebook.ipynb) => describes different types of plots
 
 ## NOTE: Download the datasets and update the paths before proceeding to run the notebook
+
+## Usage: 
+~~~ 
+    git clone https://github.com/Penguin5681/05101334-Data-Science && cd 05101334-Data-Science && pip install -r requirements.txt && code
+ ~~~
