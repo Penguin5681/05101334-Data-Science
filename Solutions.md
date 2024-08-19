@@ -83,6 +83,7 @@ print("\nLast 2 rows:\n", df.tail(2))
 ```
 
 ## 8. Diff: drop v/s dropna
+
 | Feature               | `drop()`                                      | `dropna()`                                  |
 |-----------------------|-----------------------------------------------|---------------------------------------------|
 | **Purpose**           | Removes rows or columns based on labels       | Removes rows or columns containing `NaN`    |
@@ -90,3 +91,55 @@ print("\nLast 2 rows:\n", df.tail(2))
 | **Usage**             | Used to drop specific rows/columns by name    | Used to clean data by removing `NaN` values |
 | **Handling Missing Data** | Does not handle `NaN` values             | Specifically designed to handle `NaN` values |
 | **Example Use Case**  | Dropping the "City" column or row with index 1 | Dropping rows with missing values in the "Age" column |
+
+## 9. Discuss built-in data types available in python
+
+| Data Type    | Description                                              | Example                          |
+|--------------|----------------------------------------------------------|----------------------------------|
+| **`int`**    | Whole numbers, positive or negative                      | `x = 10`                         |
+| **`float`**  | Real numbers with decimal points                         | `y = 10.5`                       |
+| **`complex`**| Complex numbers with real and imaginary parts            | `z = 2 + 3j`                     |
+| **`str`**    | Sequence of characters (text)                            | `s = "Hello, World!"`            |
+| **`list`**   | Ordered, mutable collection of elements                  | `l = [1, "two", 3.0]`            |
+| **`tuple`**  | Ordered, immutable collection of elements                | `t = (1, "two", 3.0)`            |
+| **`range`**  | Immutable sequence of numbers, often used in loops       | `r = range(1, 10)`               |
+| **`dict`**   | Unordered collection of key-value pairs                  | `d = {"name": "Alice", "age": 25}` |
+| **`set`**    | Unordered collection of unique elements                  | `s = {1, 2, 3, 4}`               |
+| **`frozenset`**| Immutable set                                          | `fs = frozenset([1, 2, 3])`      |
+| **`bool`**   | Boolean values `True` or `False`                         | `is_true = True`                 |
+| **`bytes`**  | Immutable sequence of bytes                              | `b = b'hello'`                   |
+| **`bytearray`** | Mutable sequence of bytes                             | `ba = bytearray(b'hello')`       |
+| **`memoryview`**| Memory view of a buffer                               | `mv = memoryview(bytearray(b'hello'))` |
+| **`NoneType`**| Represents the absence of a value (`None`)              | `x = None`                       |
+
+## 10. WAP using python to show inheritance
+
+```python
+class Animal:
+    def __init__(self, name):
+        self.name = name
+
+    def speak(self):
+        print("Animal is making a sound")
+
+class Dog(Animal):
+    def __init__(self, name, breed):
+        super().__init__(name)
+        self.breed = breed
+
+    def speak(self):
+        print("Woof!")
+
+class Cat(Animal):
+    def speak(self):
+        print("Meow!")
+
+animal = Animal("Generic Animal")
+dog = Dog("Buddy", "Golden Retriever")
+cat = Cat("Whiskers")
+
+animal.speak()
+dog.speak()
+cat.speak()
+print(dog.name)  # Access inherited attribute
+```
