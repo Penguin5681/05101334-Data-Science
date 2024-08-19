@@ -68,3 +68,25 @@ arr_4d = np.random.rand(2, 3, 4, 5)  # Random 4D array with shape (2, 3, 4, 5)
 | **Flexibility**         | Highly flexible, allows mixed types  | Less flexible, requires same data type |
 | **Mathematical Operations** | Limited, requires loops or list comprehensions | Extensive support, direct operations possible |
 | **Use Cases**           | General-purpose, small datasets      | Large-scale numerical computation, scientific computing |
+
+## 7. Explain head and tail with diff params
+### The head() function is used to display the first few rows of a DataFrame or series. By default, it shows the first 5 rows, but you can specify how many rows you want to see.
+### The tail() function is used to display the last few rows of a DataFrame or series. By default, it shows the last 5 rows, but you can specify how many rows you want to see.
+
+```python
+import pandas as pd
+
+df = pd.read_csv('')
+print("First 2 rows:\n", df.head(2))
+print("\nLast 2 rows:\n", df.tail(2))
+
+```
+
+## 8. Diff: drop v/s dropna
+| Feature               | `drop()`                                      | `dropna()`                                  |
+|-----------------------|-----------------------------------------------|---------------------------------------------|
+| **Purpose**           | Removes rows or columns based on labels       | Removes rows or columns containing `NaN`    |
+| **Main Parameter**    | `labels`, `axis`, `index`, `columns`          | `axis`, `how`, `thresh`, `subset`           |
+| **Usage**             | Used to drop specific rows/columns by name    | Used to clean data by removing `NaN` values |
+| **Handling Missing Data** | Does not handle `NaN` values             | Specifically designed to handle `NaN` values |
+| **Example Use Case**  | Dropping the "City" column or row with index 1 | Dropping rows with missing values in the "Age" column |
