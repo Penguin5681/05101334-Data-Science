@@ -143,3 +143,68 @@ dog.speak()
 cat.speak()
 print(dog.name)  # Access inherited attribute
 ```
+
+## 11. Explain diff types of method arguments
+
+## Types of Method Arguments in Python
+
+### Required Arguments
+* Must be provided in the same order as defined.
+* No default values.
+
+```python
+def greet(name, age):
+  print(f"Hello, {name}! You are {age} years old.")
+
+greet("Alice", 30)  # Required to provide both name and age
+```
+
+### Default Arguments
+* Have predefined values.
+* Optional to provide during function call.
+
+```python
+def greet(name, age=30):
+  print(f"Hello, {name}! You are {age} years old.")
+
+greet("Bob")  # Age defaults to 30
+greet("Charlie", 25)  # Overriding default age
+```
+
+### Keyword Arguments
+* Passed by name, allowing any order.
+* Useful for functions with many arguments.
+
+```python
+def describe_person(name, age, city):
+  print(f"{name} is {age} years old and lives in {city}.")
+
+describe_person(city="New York", name="David", age=40)
+```
+
+### Arbitrary Arguments (*args)
+* Collects an arbitrary number of positional arguments into a tuple.
+* Useful when you don't know the exact number of arguments beforehand.
+
+```python
+def sum_numbers(*args):
+  total = 0
+  for num in args:
+    total += num
+  return total
+
+result = sum_numbers(1, 2, 3, 4, 5)
+print(result)  # Output: 15
+```
+
+### Arbitrary Keyword Arguments (**kwargs)
+* Collects an arbitrary number of keyword arguments into a dictionary.
+* Useful for passing flexible keyword arguments.
+
+```python
+def print_info(**kwargs):
+  for key, value in kwargs.items():
+    print(f"{key}: {value}")
+
+print_info(name="Emily", age=28, city="London")
+```
