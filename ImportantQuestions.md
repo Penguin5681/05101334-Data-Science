@@ -22,7 +22,7 @@
 ## 2. Identify the kind of learning algorithm for facial expressions
 ### Option 1: Prediction
 ### Option 2: Recognition Pattern
-### Option 3: Grnerative Pattern
+### Option 3: Generative Pattern
 ### Option 4: Recognizing anomalies
 ## 3. What is training and testing set in ML?
 ## 4. How will you handle missing or corrupted dataset? (Hint: fillna, dropna, drop, isnull)
