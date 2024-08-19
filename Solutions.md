@@ -208,3 +208,34 @@ def print_info(**kwargs):
 
 print_info(name="Emily", age=28, city="London")
 ```
+
+## 12. What is lambda function in python? Give an example.
+
+## Lambda Functions in Python
+
+### A lambda function is a small, anonymous function defined in a single line using the `lambda` keyword. It's often used for short, simple operations.
+
+**Syntax:**
+```python
+lambda arguments: expression
+```
+
+**Example:**
+
+```python
+square = lambda x: x * x
+
+result = square(5)
+print(result)  # Output: 25
+```
+
+## 13. Diff: sort() v/s sorted()
+
+| Feature         | `sort()`                                     | `sorted()`                                  |
+|-----------------|----------------------------------------------|---------------------------------------------|
+| **Modifies Original** | Yes, sorts the list in place               | No, returns a new sorted list              |
+| **Return Value**| `None`                                       | A new sorted list                           |
+| **Applicability**| Only for lists                              | Can be used with any iterable (list, tuple, string, etc.) |
+| **Syntax**      | `list.sort(key=None, reverse=False)`          | `sorted(iterable, key=None, reverse=False)` |
+| **Usage**       | To sort and update the original list         | To create a new sorted list from an iterable |
+
