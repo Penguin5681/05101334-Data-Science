@@ -239,3 +239,11 @@ print(result)  # Output: 25
 | **Syntax**      | `list.sort(key=None, reverse=False)`          | `sorted(iterable, key=None, reverse=False)` |
 | **Usage**       | To sort and update the original list         | To create a new sorted list from an iterable |
 
+## 14. What is pickling and unpickling?
+| Process      | Description                                              | Example Usage                                |
+|--------------|----------------------------------------------------------|----------------------------------------------|
+| **Pickling** | Converting a Python object into a byte stream for storage or transmission. | `pickle.dump(data, file)`                    |
+| **Unpickling** | Converting a byte stream back into the original Python object. | `pickle.load(file)`                         |
+| **Module**   | `pickle`                                                 | `import pickle`                             |
+| **Security** | Be cautious with unpickling data from untrusted sources. | Validate sources before unpickling.          |
+| **Compatibility** | Pickled data may not be compatible across Python versions. | Use version-specific data formats if needed. |
