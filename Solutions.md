@@ -240,10 +240,9 @@ print(result)  # Output: 25
 | **Usage**       | To sort and update the original list         | To create a new sorted list from an iterable |
 
 ## 14. What is pickling and unpickling?
-| Process      | Description                                              | Example Usage                                |
-|--------------|----------------------------------------------------------|----------------------------------------------|
-| **Pickling** | Converting a Python object into a byte stream for storage or transmission. | `pickle.dump(data, file)`                    |
-| **Unpickling** | Converting a byte stream back into the original Python object. | `pickle.load(file)`                         |
-| **Module**   | `pickle`                                                 | `import pickle`                             |
-| **Security** | Be cautious with unpickling data from untrusted sources. | Validate sources before unpickling.          |
-| **Compatibility** | Pickled data may not be compatible across Python versions. | Use version-specific data formats if needed. |
+| Context               | **Pickling**                                                  | **Unpickling**                                                |
+|-----------------------|---------------------------------------------------------------|---------------------------------------------------------------|
+| **Machine Learning**  | Save trained models and pipelines for reuse                   | Load models and pipelines for prediction and evaluation       |
+| **Data Science**      | Save cleaned and preprocessed datasets for consistency        | Load shared datasets to ensure consistent analysis across teams|
+| **Purpose**           | Preserve models, pipelines, and datasets for future use       | Reuse models, pipelines, and datasets without retraining      |
+| **Usage**             | After model training, data cleaning, or pipeline creation     | During inference, analysis, or further processing             |
